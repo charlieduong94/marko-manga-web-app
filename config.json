@@ -1,0 +1,4 @@
+{
+  "redis" : "redis:6379",
+  "mongo" : "mongodb://mongo/mangaDB"
+}

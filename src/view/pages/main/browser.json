@@ -1,0 +1,8 @@
+{
+  "dependencies" : [
+    "require: marko-widgets",
+    "require: jquery",
+    "./style.less",
+    "src/view/components/app/browser.json"
+  ]
+}

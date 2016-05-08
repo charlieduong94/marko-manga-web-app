@@ -1,0 +1,12 @@
+<div id='app-main' w-bind>
+  <div class=(data.sidebarHidden ? 'return' : 'push-back')>
+    <div class='header'>
+      <app-header/>
+    </div>
+    <div class='main-content'>
+      <app-content state=data.latest/>
+    </div>
+  </div>
+  <div class=(data.sidebarHidden ? 'no-overlay' : 'overlay') w-onClick='onFilterClick'>
+  </div>
+</div>

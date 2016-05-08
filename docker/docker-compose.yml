@@ -1,0 +1,16 @@
+version: '2'
+services:
+  server:
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - mongo
+    volumes:
+      - ..:/node
+    image: node
+    command: bash -c "sleep infinity"
+  redis:
+    image: redis
+  mongo:
+    image: mongo

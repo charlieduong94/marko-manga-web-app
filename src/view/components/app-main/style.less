@@ -1,0 +1,100 @@
+#app-main{
+  height : 100%;
+  width : 100%;
+  flex : 1 1 auto;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.push-back{
+  animation : scale-rotate-out 0.75s;
+  transform : scale(0.7, 0.7)  perspective(1000px) rotateY(-10deg);
+  height : 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow : column;
+}
+.return{
+  animation : scale-rotate-in 0.75s;
+  height : 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow : column;
+}
+.header{
+}
+.main-content{
+  background-color: white;
+  overflow: auto;
+  height : 100%;
+  width : 100%;
+  flex : 1 1 auto;
+  -webkit-box-flex : 1 1 auto;
+  -moz-box-flex : 1 1 auto;
+  -webkit-flex : 1 1 auto;
+  -ms-flex : 1 1 auto;
+}
+
+.overlay{
+  z-index: 100;
+  background-color: black;
+  opacity: 0.6;
+  height : 100%;
+  width : 100%;
+  top : 0;
+  position : absolute;
+  animation : fadeIn 0.75s;
+}
+.no-overlay{
+  animation : fadeOut 0.75s;
+  position : absolute;
+  z-index : -1;
+  top : 0;
+  height : 100%;
+  width : 100%;
+}
+@keyframes scale-rotate-out{
+  0% {
+    transform : scale(1, 1) perspective(0px) rotateY(0deg);
+
+  }
+  100%{
+    transform : scale(0.7, 0.7)  perspective(1000px) rotateY(-10deg);
+  }
+}
+
+@keyframes scale-rotate-in{
+  0% {
+    transform : scale(0.7, 0.7) perspective(1000px) rotateY(-10deg);
+  }
+  100%{
+    transform : scale(1, 1) perspective(0px) rotateY(0deg);
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity : 0.6
+  }
+}
+
+@keyframes fadeOut{
+  0% {
+    opacity: 0.6;
+  }
+  100%{
+    opacity : 0
+  }
+}
