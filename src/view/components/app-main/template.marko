@@ -4,7 +4,7 @@
       <app-header/>
     </div>
     <div class='main-content'>
-      <app-content state=data.latest/>
+      <app-manga-horizontal-slider id='latest-slider' title='Latest Manga' manga=data.latest/>
     </div>
   </div>
   <div class=(data.sidebarHidden ? 'no-overlay' : 'overlay') w-onClick='onFilterClick'>

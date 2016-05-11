@@ -1,0 +1,42 @@
+.card-columns{
+  column-width  : 250px;
+  column-count : 10 !important;
+}
+.card {
+  float : left;
+}
+.manga-image{
+  width : 250px;
+  height : 350px;
+  object-fit : cover;
+  margin : 0px 20px 0px 20px;
+}
+.manga-row {
+  width : 100%;
+  overflow-x: scroll;
+  white-space : nowrap;
+}
+.manga-row::-webkit-scrollbar{
+  display : none;
+}
+.slider-wrapper{
+  color : white;
+  background-color: #333333;
+  padding : 20px;
+}
+.inline{
+  display : inline;
+}
+
+.floating-slider-button {
+  color : #ff6600;
+  position : absolute;
+  z-index: 500;
+  top : 235px;
+}
+.left-angle-btn:extend(.floating-slider-button) {
+  left : 20px;
+}
+.right-angle-btn:extend(.floating-slider-button) {
+  right : 20px;
+}
